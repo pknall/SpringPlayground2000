@@ -12,7 +12,7 @@
             <th>Name</th>
             <th>Args</th>
         </tr>
-        <!--
+
     <div th:each="job, status : ${jobList}">
         <tr>
             <td><div th:text="${status.index + 1}">1</div></td>
@@ -20,10 +20,10 @@
             <td><div th:text="${job.args}">No Args</div></td>
         </tr>
     </div>
-    -->
+    
     </table>
     <br />
     <!--<input type="button" onclick="window.location.href='/'" value="Add Job"/>-->
-    <a th:href="@{/}"><button>Add Job</button></a>
+    <a th:href="@{/jobs}"><button>Add Job</button></a>
 </body>
 </html>

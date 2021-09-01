@@ -16,7 +16,7 @@ import java.util.List;
 
 @Slf4j
 @Controller
-@RequestMapping("/")
+@RequestMapping("/jobs")
 public class JobController {
 
     private List<Job> jobList;
@@ -44,7 +44,7 @@ public class JobController {
         }
         if (jobList == null) jobList = new ArrayList<>();
         jobList.add(job);
-        return "redirect:jobList";
+        return "redirect:jobs/jobList";
     }
 
     @GetMapping("/jobList")
